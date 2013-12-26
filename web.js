@@ -13,6 +13,15 @@ var eventEmitter = require('events').EventEmitter;
 
 appInstance.expressApp = express();
 appInstance.expressApp.use(express.static(__dirname + '/www/dist'));
+appInstance.expressApp.use(express.bodyParser());
+appInstance.expressApp.use(express.methodOverride());
+appInstance.expressApp.use(express.logger());
+appInstance.expressApp.use(express.errorHandler({
+    dumpExceptions: true,
+    showStack: true
+}));
+
+
 
 appInstance.csvConverter = new converter();
 appInstance.csvConverter.from(appInstance.csvFileName);
@@ -45,10 +54,13 @@ appInstance.ee.on('end_parsed', function(){
 	appInstance.expressApp.get('/data', function(req, res){
 		res.send(appInstance.dataObj);
 	});
-	/*appInstance.expressApp.get('/', function(req, res){
-		res.send(index.html);
-	});*/
-	var port = process.env.PORT || 8008;
+	
+	appInstance.expressApp.get('/', function(req, res){
+		res.redirect("/index.html");
+		//res.send(index.html);
+	});
+
+	var port = process.env.PORT || 8081;
 	appInstance.expressApp.listen(port);
 
 });
