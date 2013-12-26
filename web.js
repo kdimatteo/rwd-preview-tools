@@ -12,8 +12,7 @@ var eventEmitter = require('events').EventEmitter;
 
 
 appInstance.expressApp = express();
-//appInstance.expressApp.use(express.static(__dirname + '/www/dist'));
-appInstance.expressApp.use(express.static('/www/dist'));
+appInstance.expressApp.use(express.static(__dirname + '/www/dist'));
 
 appInstance.csvConverter = new converter();
 appInstance.csvConverter.from(appInstance.csvFileName);
