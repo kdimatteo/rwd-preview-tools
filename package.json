@@ -6,7 +6,7 @@
   "dependencies": {
     "csvtojson": "~0.1.5",
     "express" : "3.x",
-    "events" : "1.x",
+    "events" : "1.x"
   },
   "devDependencies": {},
   "scripts": {
