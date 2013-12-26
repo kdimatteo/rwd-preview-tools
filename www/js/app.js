@@ -4,7 +4,7 @@
 
 $(document).ready(function(){
 
-	console.log("ok");
+	
 	
 	$.get("/data", function(data, success_code){
 		"use strict";

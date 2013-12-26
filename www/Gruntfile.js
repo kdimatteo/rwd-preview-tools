@@ -47,6 +47,13 @@ module.exports = function(grunt) {
 			}
 		},
 
+		removelogging: {
+			dist: {
+				src: "js/app.js",
+				dest: "js/app.js",
+			}
+		},
+		
 		less: {
 			/*development: {
 				options: {
@@ -71,12 +78,13 @@ module.exports = function(grunt) {
 
 	grunt.loadNpmTasks('grunt-contrib-clean');
 	grunt.loadNpmTasks('grunt-contrib-copy');
+	grunt.loadNpmTasks("grunt-remove-logging");
 	grunt.loadNpmTasks('grunt-useref');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-less');
 
 
-	grunt.registerTask('default', ['clean', 'copy', 'useref', 'uglify', 'less']);
+	grunt.registerTask('default', ['clean', 'copy', 'useref', 'removelogging', 'uglify', 'less']);
 
 };
 
