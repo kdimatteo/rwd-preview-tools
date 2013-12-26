@@ -3,8 +3,7 @@ var appInstance = {
 	dataObj : null,
 	ee : null,
 	csvConverter : null,
-	csvFileName : "./raw.csv",
-
+	csvFileName : "./raw.csv"
 };
 
 var express = require('express');
