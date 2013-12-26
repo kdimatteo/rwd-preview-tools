@@ -61,11 +61,10 @@ appInstance.ee.on('end_parsed', function(){
 	appInstance.expressApp.get('/data', function(req, res){
 		res.send(appInstance.dataObj);
 	});
-	/*appInstance.expressApp.get('/', function(req, res){
+	appInstance.expressApp.get('/', function(req, res){
 		res.send(index.html);
 	});
-	*/
-	appInstance.expressApp.listen(8008);
+	appInstance.expressApp.listen(8000);
 
 });
 

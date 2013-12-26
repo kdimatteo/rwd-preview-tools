@@ -4,13 +4,31 @@ module.exports = function(grunt) {
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
 		
+		clean: {
+            clean: [ './dist' ]
+        },
+       
+
+		copy: {
+			main: {
+				src: 'index.html',
+				dest: 'dist/index.html',
+			},
+			fonts: {
+				src: 'fonts/*',
+				dest: 'dist/',
+			},
+		},
+
+
 		useref: {
 			// specify which files contain the build blocks
-			html: 'output/**/*.html',
+			html: 'dist/index.html',
+			//html: '../dist/**/*.html',
 			// explicitly specify the temp directory you are working in
 			// this is the the base of your links ( "/" )
-			temp: 'output'
-		},	
+			temp: '/'
+		},
 
 		uglify: {
 			options: {
@@ -18,11 +36,10 @@ module.exports = function(grunt) {
 			},
 			build: {
 				files : {
-					'../dist/app.min.js' : 
-					[
-						'../js/vendor/jquery-2.0.3.js',
-						'../js/vendor/lodash.js',
-						'../js/app.js'
+					'dist/js/app.min.js' : [
+						'js/vendor/jquery-2.0.3.js',
+						'js/vendor/lodash.js',
+						'js/app.js'
 					]
 				}
 				//src: '../js/<%= pkg.name %>.js',
@@ -45,19 +62,21 @@ module.exports = function(grunt) {
 					cleancss: true
 				},
 				files: {
-					"../dist/css/main.css": "../less/main.less"
+					"dist/css/main.css": "less/main.less"
 				}
 			}
 		}
 
 	});
 
+	grunt.loadNpmTasks('grunt-contrib-clean');
+	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-useref');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-less');
 
 
-	grunt.registerTask('default', ['cp', 'useref', 'uglify', 'less']);
+	grunt.registerTask('default', ['clean', 'copy', 'useref', 'uglify', 'less']);
 
 };
 
