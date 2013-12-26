@@ -49,7 +49,8 @@ appInstance.ee.on('end_parsed', function(){
 	appInstance.expressApp.get('/', function(req, res){
 		res.send(index.html);
 	});
-	appInstance.expressApp.listen(80);
+	var port = process.env.PORT || 8008;
+	appInstance.expressApp.listen(port);
 
 });
 
