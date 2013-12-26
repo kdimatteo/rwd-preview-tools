@@ -6,7 +6,7 @@ $(document).ready(function(){
 
 	console.log("ok");
 	
-	$.get("http://localhost:8008/data", function(data, success_code){
+	$.get("/data", function(data, success_code){
 		"use strict";
 
 		var headers = _.keys(data["csvRows"][0]),
