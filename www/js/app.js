@@ -15,7 +15,6 @@ $(document).ready(function(){
 			bodyHTML = "";
 
 		_.each(headers, function(el, index){
-			console.log(_.contains(skippable, el), el == "URL", el, skippable);
 			if(!_.contains(skippable, el)){
 				headerHTML.append("<td data-colid="+index+">"+el+"</td>")
 			}
