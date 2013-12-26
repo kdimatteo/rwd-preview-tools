@@ -1,18 +1,3 @@
-/**
- * @see https://npmjs.org/package/csvtojson
- */
-/*
-var webServer=require("csvtojson").interfaces.web;
-
-var expressApp=webServer.startWebServer({
-    "port" : "8801",
-    "urlPath" : "/parseCSV"
-});
-
-*/
-
-//var dataObj = null;
-
 var appInstance = {
 	expressApp : null,
 	dataObj : null,
@@ -28,7 +13,8 @@ var eventEmitter = require('events').EventEmitter;
 
 
 appInstance.expressApp = express();
-appInstance.expressApp.use(express.static(__dirname + '/www/dist'));
+//appInstance.expressApp.use(express.static(__dirname + '/www/dist'));
+appInstance.expressApp.use(express.static('/www/dist'));
 
 appInstance.csvConverter = new converter();
 appInstance.csvConverter.from(appInstance.csvFileName);
