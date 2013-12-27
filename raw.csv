@@ -1,15 +1,15 @@
-Product Name,URL,Pricing,Cost,Spoofs Device Headers,Allows Custom Sizes,Side-by-Side visual preview,Allows Proxy Server,Default Sizes,Allows Screen Rotation,Allows Auto Scroll,Width Measured By,Comment
-Matt Kersley - Responsive Design Testing,http://mattkersley.com/responsive/,Free,Ad Suppoted,0,0,1,0,5,0,0,innerWidth(),"Quick & Dirty iframe approach, allows side by side breakpoint comparison"
-Screen Fly,http://quirktools.com/screenfly/,Free,,0,1,0,1,24,1,1,PX,"fast, lightweight"
-Resize My Browser,http://resizemybrowser.com/,Free,Ad Supported,0,1,0,0,12,0,0,innerWidth() or outerWidth(),"JS to set screen size, useful if you develop in multiple tabs"
-Responsinator,http://www.responsinator.com/,Freemium,$6/mo,0,0,1,0,12,0,0,PX,Long Scrolling list of devices in wireframe-looking device comps. Portrait & Landscape designs.
-Screen Queries,http://beta.screenqueri.es/,Free,Signup / email,0,1,0,0,60,1,0,PX,"quickly & easily toggle between multiple breakpoints, refresh button for easy CURL calls to dev URL"
-ResponsivePX,http://responsivepx.com/,Free,,0,0,0,0,None,0,0,innerWidth,only realy feature is ability to share URL to a specific size and preloaded preview URL
-ResponsiveIS,http://responsive.is,Free,,0,0,0,0,5,,0,,
-Benjamin Keen - Responsive Design Bookmarklet,http://www.benjaminkeen.com/open-source-projects/smaller-projects/responsive-design-bookmarklet/,Free,,0,1,1,0,6,0,0,innerWidth,js bookmarklets to set browser window size
-Resizer,http://codebomber.com/jquery/resizer/,Free,,0,0,0,0,5,0,0,innerWidth,another bookmarklet with fixed sizes and a decent design
-Responsive Design Bookmarklet,http://responsive.victorcoulon.fr/,Free,,0,1,0,0,5,1,0,innerWidth,seems a little slow/dodgy
-Fire Sizer,https://addons.mozilla.org/en-US/firefox/addon/firesizer/,Free,,0,1,0,0,3,0,0,innerWidth,native FF plugin to resize browser
-Mobilizer,http://www.springbox.com/mobilizer/,Free,,0,0,1,0,5,0,0,PX,"Air App iPhone, Android, HTC and Blackberry with realistic device previews"
-Proto Fluid,http://protofluid.com/,Free,Ad Supported,0,,0,0,21,1,0,,"clever browser tool, creates iframe w/ URL of dev site"
-ReView.js,http://responsiveviewport.com/,,,,,,,,,,,
+Product Name,URL,Pricing,Tool Type,Default Devices/Sizes,Spoofs Device Headers,Allows Custom Sizes,Side-by-Side visual preview,Allows Proxy Server,Allows Screen Rotation,Allows Auto Scroll,Width Measured By,Comment
+Matt Kersley - Responsive Design Testing,http://mattkersley.com/responsive/,Free (Ad Supported),iframe,5,0,0,1,0,0,0,innerWidth(),"Quick & Dirty iframe approach, allows side by side breakpoint comparison"
+Screen Fly,http://quirktools.com/screenfly/,Free,iframe,24,0,1,0,1,1,1,PX,"fast, lightweight"
+Resize My Browser,http://resizemybrowser.com/,Free (Ad Supported),window resizer,12,0,1,0,0,0,0,innerWidth() or outerWidth(),"JS to set screen size, useful if you develop in multiple tabs"
+Responsinator,http://www.responsinator.com/,Freemium ($6/mo),iframe,12,0,0,1,0,0,0,PX,Long Scrolling list of devices in wireframe-looking device comps. Portrait & Landscape designs.
+Screen Queries,http://beta.screenqueri.es/,Free (signup required),iframe,60,0,1,0,0,1,0,PX,"quickly & easily toggle between multiple breakpoints, refresh button for easy CURL calls to dev URL"
+ResponsivePX,http://responsivepx.com/,Free,iframe,None,0,0,0,0,0,0,innerWidth,only realy feature is ability to share URL to a specific size and preloaded preview URL
+ResponsiveIS,http://responsive.is,Free,iframe,5,0,0,0,0,,0,,
+Benjamin Keen - Responsive Design Bookmarklet,http://www.benjaminkeen.com/open-source-projects/smaller-projects/responsive-design-bookmarklet/,Free,iframe,6,0,1,1,0,0,0,innerWidth,js bookmarklets to set browser window size
+Resizer,http://codebomber.com/jquery/resizer/,Free,window resizer,5,0,0,0,0,0,0,innerWidth,another bookmarklet with fixed sizes and a decent design
+Responsive Design Bookmarklet,http://responsive.victorcoulon.fr/,Free,window resizer,5,0,1,0,0,1,0,innerWidth,seems a little slow/dodgy
+Fire Sizer,https://addons.mozilla.org/en-US/firefox/addon/firesizer/,Free,firefox plugin,3,0,1,0,0,0,0,innerWidth,native FF plugin to resize browser
+Mobilizer,http://www.springbox.com/mobilizer/,Free,air app,5,0,0,1,0,0,0,PX,"Air App iPhone, Android, HTC and Blackberry with realistic device previews"
+Proto Fluid,http://protofluid.com/,Free (Ad Supported),iframe,21,0,,0,0,1,0,,"clever browser tool, creates iframe w/ URL of dev site"
+Ripple,https://chrome.google.com/webstore/detail/ripple-emulator-beta/geelfhphabnejjhdalkjhgipohgpdnoc?hl=en,Free,chrome plugin,60+,0,0,0,1,1,0,,Loads of other features including geo location spoofing and device sketchs for realistic screen caps.
